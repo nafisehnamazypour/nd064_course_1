@@ -3,7 +3,7 @@ FROM python:3.8
 
 LABEL maintainer="Nafiseh Namazypour"
 
-COPY ./techtrends /app
+COPY ./project/techtrends /app
 WORKDIR /app
 
 
