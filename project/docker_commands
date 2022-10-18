@@ -1,0 +1,35 @@
+## Docker commands used to build the application 
+docker build -t techtrends .
+
+## Docker commands used to run the application
+docker run -d -p 7111:3111 techtrends
+
+## Docker commands used to get the application logs
+docker logs 1061cf011c68984b0f8a16f568d3404de053f9a891058b9232713750cc6cb651
+
+## Logs from the container running the TechTrends application
+ * Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+2022-10-18,09:21:08  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2022-10-18,09:21:08  * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
+2022-10-18,09:25:52 172.17.0.1 - - [18/Oct/2022 09:25:52] "GET / HTTP/1.1" 200 -
+2022-10-18,09:25:52 172.17.0.1 - - [18/Oct/2022 09:25:52] "GET /static/css/main.css HTTP/1.1" 200 -
+2022-10-18,09:25:53 172.17.0.1 - - [18/Oct/2022 09:25:53] "GET /favicon.ico HTTP/1.1" 404 -
+2022-10-18,09:26:03 172.17.0.1 - - [18/Oct/2022 09:26:03] "GET / HTTP/1.1" 200 -
+2022-10-18,09:26:03 172.17.0.1 - - [18/Oct/2022 09:26:03] "GET /static/css/main.css HTTP/1.1" 304 -
+2022-10-18,09:30:41 The "About Us" page is retrieved.
+2022-10-18,09:30:41 172.17.0.1 - - [18/Oct/2022 09:30:41] "GET /about HTTP/1.1" 200 -
+2022-10-18,09:30:41 172.17.0.1 - - [18/Oct/2022 09:30:41] "GET /static/css/main.css HTTP/1.1" 304 -
+2022-10-18,09:30:45 Article 2020 CNCF Annual Report is retrieved.
+2022-10-18,09:30:45 172.17.0.1 - - [18/Oct/2022 09:30:45] "GET /1 HTTP/1.1" 200 -
+2022-10-18,09:30:46 172.17.0.1 - - [18/Oct/2022 09:30:46] "GET /static/css/main.css HTTP/1.1" 304 -
+2022-10-18,09:30:49 172.17.0.1 - - [18/Oct/2022 09:30:49] "GET /create HTTP/1.1" 200 -
+2022-10-18,09:30:50 172.17.0.1 - - [18/Oct/2022 09:30:50] "GET /static/css/main.css HTTP/1.1" 304 -
+2022-10-18,09:31:11 The article with the title New Test Post in local run is created.
+2022-10-18,09:31:11 172.17.0.1 - - [18/Oct/2022 09:31:11] "POST /create HTTP/1.1" 302 -
+2022-10-18,09:31:11 172.17.0.1 - - [18/Oct/2022 09:31:11] "GET / HTTP/1.1" 200 -
+2022-10-18,09:31:11 172.17.0.1 - - [18/Oct/2022 09:31:11] "GET /static/css/main.css HTTP/1.1" 304 -
