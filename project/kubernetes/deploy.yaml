@@ -10,6 +10,7 @@ spec:
   selector:
     matchLabels:
       app: techtrends
+    name: techtrends
   strategy:
     rollingUpdate:
       maxSurge: 25%
@@ -19,6 +20,7 @@ spec:
     metadata:
       labels:
         app: techtrends
+      name: techtrends
     spec:
       containers:
       - image: nafisehnamazypour/techtrends:latest
