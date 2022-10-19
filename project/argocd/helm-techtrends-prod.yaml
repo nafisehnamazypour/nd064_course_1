@@ -9,7 +9,6 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    name: techtrends-prod
     helm:
       valueFiles:
       - values-prod.yaml
